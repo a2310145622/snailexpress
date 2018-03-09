@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/uname"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="45dp"
+        android:hint="@string/username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/pwd"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="28dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uname" />
+
+    <EditText
+        android:id="@+id/cpwd"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="28dp"
+        android:hint="@string/confirmpasswords"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pwd" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="28dp"
+        android:hint="@string/rname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cpwd" />
+
+    <EditText
+        android:id="@+id/tel"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="28dp"
+        android:hint="@string/telephone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="28dp"
+        android:hint="@string/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tel" />
+
+    <Button
+        android:id="@+id/register1"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="77dp"
+        android:text="@string/register"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/login1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/login1"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:layout_marginEnd="77dp"
+        android:layout_marginStart="30dp"
+        android:text="@string/login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/register1" />
+</android.support.constraint.ConstraintLayout>
